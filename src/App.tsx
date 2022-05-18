@@ -70,7 +70,7 @@ function App() {
 								<div>
 									高：
 									<input
-										className="border-b"
+										className="border-b w-20"
 										type="number"
 										value={condition.high || ''}
 										onChange={(e: ChangeEvent<HTMLInputElement>) =>
@@ -81,7 +81,7 @@ function App() {
 								<div>
 									低：
 									<input
-										className="border-b"
+										className="border-b w-20"
 										type="number"
 										value={condition.low || ''}
 										onChange={(e: ChangeEvent<HTMLInputElement>) =>
@@ -94,7 +94,7 @@ function App() {
 								<div>
 									Risk：
 									<input
-										className="border-b"
+										className="border-b w-20"
 										disabled
 										type="number"
 										value={condition.risk}
