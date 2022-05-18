@@ -231,13 +231,13 @@ function App() {
 										價格一：
 										{condition.direction === 'call'
 											? condition.high! + 1 + condition.stopProfitRatio * condition.risk!
-											: condition.low! - 1 - condition.stopLossRatio * condition.risk!}
+											: condition.low! - 1 + condition.stopLossRatio * condition.risk!}
 									</p>
 									<p className="px-2 py-1 border">
 										價格二：
 										{condition.direction === 'call'
 											? condition.high! + 1 - condition.stopLossRatio * condition.risk!
-											: condition.low! - 1 + condition.stopProfitRatio * condition.risk!}
+											: condition.low! - 1 - condition.stopProfitRatio * condition.risk!}
 									</p>
 								</div>
 							</div>
