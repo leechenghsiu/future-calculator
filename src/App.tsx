@@ -97,7 +97,7 @@ function App() {
 										className="border-b w-20"
 										disabled
 										type="number"
-										value={condition.risk}
+										value={condition.risk || ''}
 										onChange={(e: ChangeEvent<HTMLInputElement>) =>
 											setCondition({ ...condition, high: parseInt(e.target.value) })
 										}
